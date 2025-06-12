@@ -54,6 +54,11 @@ class FormValidator {
     }
   }
 
+  _disabledButtonState() {
+    this._buttonElement.classList.add(this._inactiveButtonClass);
+    this._buttonElement.disabled = true;
+  }
+
   _setEventListeners() {
     this._inputList = Array.from(
       this._formEl.querySelectorAll(this._inputSelector)
@@ -81,8 +86,7 @@ class FormValidator {
   resetValidation() {
     this._formEl.reset();
 
-    this._buttonElement.classList.add(this._inactiveButtonClass);
-    this._buttonElement.disabled = true;
+    this._disabledButtonState();
   }
 }
 
