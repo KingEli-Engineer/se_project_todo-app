@@ -18,7 +18,7 @@ class Todo {
     });
   }
 
-  _genrateCheckboxEl() {
+  _generateCheckboxEl() {
     this._todoCheckboxEl = this._todoElement.querySelector(".todo__completed");
     this._todoLabel = this._todoElement.querySelector(".todo__label");
 
@@ -52,7 +52,7 @@ class Todo {
 
     todoNameEl.textContent = this._data.name;
 
-    this._genrateCheckboxEl();
+    this._generateCheckboxEl();
     this._generateDateEl();
     this._setEventListeners();
 

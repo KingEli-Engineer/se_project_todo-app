@@ -8,7 +8,7 @@ The application allows you to create a new item to go into your todo list and al
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+Java Script Classes, BEM, Prettier, Import/Export, Modules
 
 ## Deployment
 

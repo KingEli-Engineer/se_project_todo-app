@@ -8,7 +8,7 @@ class FormValidator {
     this._formEl = formEl;
   }
 
-  _buttonElementSelector() {
+  _setButtonElement() {
     this._buttonElement = this._formEl.querySelector(
       this._submitButtonSelector
     );
@@ -63,7 +63,7 @@ class FormValidator {
       this._formEl.querySelectorAll(this._inputSelector)
     );
 
-    this._buttonElementSelector();
+    this._setButtonElement();
 
     this._toggleButtonState();
 
